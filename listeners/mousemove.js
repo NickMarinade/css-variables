@@ -1,0 +1,1 @@
+inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
