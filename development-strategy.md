@@ -1,6 +1,6 @@
 # Css-Variable
 
-This site was build as a study project with JavaScript30.
+This site was build as great teamwork en a study project with JavaScript30.
 
 ## 0. Setup
 
@@ -8,25 +8,17 @@ This site was build as a study project with JavaScript30.
 - Need to create all separate files like `index.html`, `style.css`, `img`, `handler` & `listeners`.
 > * What are you putting in each file? 
 - In `index.html` I build a skeleton of the app with <labels> & <inputs> connecting it with my `script` and `style` files.
-- In `style.css` will place my app to the center with image .
-- In `handlers` i will put `handlerRemove.js` & `handlerSound.js`
-- In `listeners` will put `listenerRemove.js` & `listenerSound.js`  
+- In `style.css` will place my app to the center with image and declare variables.
+- In `handlers` i will write `data.js`
+- In `listeners` will write `change.js` & `mousemove.js`  
 
-## 1. User Story: As a user I want to press key and hear different sounds.
+## 1. User Story: As a user I want to be able to change spacing, blur or color.
 
 > * Which user story makes sense to code first?
-- Create keydown function to activate `audio` sound of each key user presses.
+- Create function to activate `change` , `mousemove` in `listeners` when you move the root variable  it would change size, bluriness and color on the page
 > * Which files of code do you need to change?
-- `handlers` - `handlerSound.js` and `listeners` - `listenerSound.js`.
+- `css`, `handler`  and `listeners`- `change.js`, `mousemove.js`
 > * What are you changing in them?
-- In `handlers`-`handlerSound.js` will return `audio` sound of each key user will press. 
-- In `listeners`-`listenerSound.js` will trigger the handlers data on `keydown`.
-
-## 2. User Story: As a user I want that ones button is released the sound stops.
-> * Which user story makes sense to code first?
-- Ones button is released the sound stops.
-> * Which files of code do you need to change?
-- `handlers` - `handlerRemove.js` and `listeners` - `listenerRemove.js` will end the sound. 
-> * What are you changing in them?
-- In `handlers` - `handlerRemove.js` will remove sound transition on the key release. 
-- In `listeners` - `listenerRemove.js` will trigger the handlers data on `transitionend`.
+- In `css` have to declare variables in the root and asign then to an object.
+- In in `handler` i will activate the action with `handlerUpdate` function to be updated ones you `mousemove` and `change` settings to make changes.
+- In `listeners`- will trigger and update the settings ones user moves mouse and changes the setting to a new settings.
